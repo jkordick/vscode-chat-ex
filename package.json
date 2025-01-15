@@ -1,0 +1,47 @@
+{
+  "name": "vscode-chat-ex",
+  "displayName": "vscode-chat-ex",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "AI",
+    "Chat"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "chatParticipants": [
+      {
+        "id": "chat-tutorial.vscode-chat-ex",
+        "fullName": "vscode-chat-ex",
+        "name": "vscode-chat-ex",
+        "description": "I am a hopefully Julia's successful vs code chat extension demo. I am sceptical, ngl.",
+        "isSticky": true
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@stylistic/eslint-plugin": "^2.9.0",
+    "@types/mocha": "^10.0.3",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.94.0",
+    "@vscode/test-electron": "^2.3.6",
+    "eslint": "^9.13.0",
+    "glob": "^10.3.10",
+    "mocha": "^10.2.0",
+    "typescript": "^5.2.2",
+    "typescript-eslint": "^8.16.0"
+  }
+}
