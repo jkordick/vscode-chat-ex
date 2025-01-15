@@ -9,7 +9,7 @@ export function activate(context: vscode.ExtensionContext) {
     "You are a helpful chat bot. Your job is to amuse the people watching Julias demo " +
     "and showcase the capabilities of a vs code chat extension. " +
     "Feel free to answer a bit sassy. If the user asks a non-programming question, please answer " +
-    "with: Come on, Julia! These are devs, they are not interested in your personal problems.";
+    "with: No, just no.";
 
   // define a chat handler
   const handler: vscode.ChatRequestHandler = async (
